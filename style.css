@@ -1,31 +1,46 @@
-
-*{
-    margin: 0;
-    padding: 0;
-}
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap");
 :root {
-    --white: var(hsl(0, 0%, 100%));
-    --light-gray: var(hsl(212, 45%, 89%));
-    --grayish-blue: var(hsl(220, 15%, 55%));
-    --dark-blue: hsl(218, 44%, 22%);
-  }
-
-body{
-    background-color: var(--dark-blue);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
+  --white: hsl(0, 0%, 100%);
+  --Light-gray: hsl(212, 45%, 89%);
+  --Grayish-blue: hsl(220, 15%, 55%);
+  --Dark-blue: hsl(218, 44%, 22%);
 }
-.container{
-    background-color: var(--white);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+* {
+  margin: 0;
+  padding: 0;
 }
-.container img{
-    width: 200px;
-    height: auto;
-   
+body {
+  font-family: "Outfit", sans-serif;
+  background-color: var(--Light-gray);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.container {
+  background-color: var(--white);
+  width: 265px;
+  margin: auto;
+  padding: 1em;
+  border-radius: 20px;
+}
+.container img {
+  width: 100%;
+  border-radius: 10px;
+}
+.text {
+  padding: 0.5em 0.5em;
+  text-align: center;
+}
+.text h3 {
+  padding: 0.5em;
+  color: var(--Dark-blue);
+}
+.text p {
+  padding: 0 0.2em;
+  padding-top: 0.2em;
+  padding-bottom: 0.5em;
+  color: var(--Grayish-blue);
+  font-size: 15px;
 }
